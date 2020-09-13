@@ -14,7 +14,8 @@ class MyWaveClipper extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            child: (CustomScrun(
+            child: 
+            (CustomScrun(
               img: 'assets/images/icons/appIcon.png',
               img2: 'assets/images/icons/Artboard11.png',
             )),
@@ -49,14 +50,15 @@ class MyWaveClipper extends StatelessWidget {
                   ),
                 ),
                 CustomTextField(
-                  color: Color(0xFF2e112d),
-                  titel: 'اسم المستحدم',
+                  color: Colors.white,
+                  titel: 'اكتب هنا',
                   label: 'اسم المستحدم',
                 ),
                 CustomTextField(
                   color: Color(0xFF2e112d),
-                  titel: '*********',
+                  titel: 'اكتب هنا',
                   label: 'كلمة المرور',
+                  icon: true,
                 ),
                 Container(
                   alignment: Alignment.centerLeft,
@@ -89,7 +91,7 @@ class MyWaveClipper extends StatelessWidget {
                 CustomButton(
                   onTab: () {},
                   color: Color(0xFF2e112d),
-                  Border: Color(0xFF2e112d),
+                  border: Color(0xFF2e112d),
                   color2: Colors.white,
                   titel: 'دخول',
                 ),

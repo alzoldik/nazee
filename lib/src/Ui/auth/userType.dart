@@ -65,7 +65,7 @@ class _UserTypeState extends State<UserType> {
                                   builder: (context) => MyWaveClipper()));
                         },
                         color: Color(0xFF2e112d),
-                        Border: Color(0xFF2e112d),
+                        border: Color(0xFF2e112d),
                         color2: Colors.white,
                         titel: 'عميل',
                       ),
@@ -78,7 +78,7 @@ class _UserTypeState extends State<UserType> {
                         },
                         color: Colors.white,
                         color2: Color(0xFF2e112d),
-                        Border: Color(0xFF2e112d),
+                        border: Color(0xFF2e112d),
                         titel: 'مقدم خدمة',
                       ),
                     ],

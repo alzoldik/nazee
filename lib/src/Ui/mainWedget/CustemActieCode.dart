@@ -380,6 +380,7 @@ class _OtpState extends State<Otp> with SingleTickerProviderStateMixin {
       } else if (_fourthDigit == null) {
         _fourthDigit = _currentDigit;
 
+        // ignore: unused_local_variable
         var otp = _firstDigit.toString() +
             _secondDigit.toString() +
             _thirdDigit.toString() +
@@ -408,6 +409,7 @@ class _OtpState extends State<Otp> with SingleTickerProviderStateMixin {
   }
 }
 
+// ignore: must_be_immutable
 class OtpTimer extends StatelessWidget {
   final AnimationController controller;
   double fontSize;

@@ -1,11 +1,10 @@
-import 'package:matcher/matcher.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatefulWidget {
   final String titel;
   final Color color;
   final Color color2;
-  final Color Border;
+  final Color border;
   final Function onTab;
 
   const CustomButton({
@@ -14,7 +13,7 @@ class CustomButton extends StatefulWidget {
     this.color,
     this.onTab,
     this.color2,
-    this.Border,
+    this.border,
   }) : super(key: key);
   @override
   _CustomButtonState createState() => _CustomButtonState();
@@ -41,7 +40,7 @@ class _CustomButtonState extends State<CustomButton>
         borderRadius: BorderRadius.circular(5),
         color: widget.color,
         border: Border.all(
-          color: widget.Border,
+          color: widget.border,
           width: 2,
         ),
         // boxShadow: [

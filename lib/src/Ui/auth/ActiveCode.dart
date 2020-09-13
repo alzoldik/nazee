@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:nazeef/src/Ui/mainWedget/CustemActieCode.dart';
 import 'package:nazeef/src/Ui/mainWedget/CustemButton.dart';
 import 'package:nazeef/src/Ui/mainWedget/CustemScrun.dart';
-import 'package:nazeef/src/Ui/mainWedget/CustemTextField.dart';
 import 'package:pin_entry_text_field/pin_entry_text_field.dart';
 
 import 'ConfirmPassword.dart';
@@ -87,7 +85,7 @@ class ActiveCode extends StatelessWidget {
                             builder: (context) => ConfirmPassword()));
                   },
                   color: Color(0xFF2e112d),
-                  Border: Color(0xFF2e112d),
+                  border: Color(0xFF2e112d),
                   color2: Colors.white,
                   titel: 'ارسال',
                 ),

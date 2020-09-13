@@ -27,31 +27,15 @@ class _SplashScreenState extends State<SplashScreen> {
     return Material(
         child: Stack(
       children: <Widget>[
-        Image.asset(
-          'assets/images/icons/appIcon.png',
-          fit: BoxFit.fitHeight,
+        Container(
+          color: Color.fromRGBO(45, 14, 44, 1),
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
+          child: Image.asset(
+            'assets/images/icons/appIcon.png',
+            fit: BoxFit.contain,
+          ),
         ),
-//            Center(
-//              child: Column(
-//                mainAxisAlignment: MainAxisAlignment.center,
-//                children: <Widget>[
-//                  Container(
-//                      width: 200,
-//                      height: 300,
-//                      child: Image.asset('assets/logo.png')),
-//                  SizedBox(height: 130),
-//                  Text(
-//                    'klfdjhg',
-//                    style: TextStyle(
-//                      color: Colors.black,
-//                      fontSize: 15,
-//                    ),
-//                  )
-//                ],
-//              ),
-//            )
       ],
     ));
   }

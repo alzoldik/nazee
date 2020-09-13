@@ -4,7 +4,7 @@ class CustomTextField extends StatefulWidget {
   final String titel;
   final Color color;
   final String label;
-  // final IconData icon;
+  final bool icon;
   // final IconData icon;
 
   const CustomTextField({
@@ -12,6 +12,7 @@ class CustomTextField extends StatefulWidget {
     this.titel,
     this.color,
     this.label,
+    this.icon,
   }) : super(key: key);
   @override
   _CustomTextFieldState createState() => _CustomTextFieldState();
@@ -24,6 +25,8 @@ class _CustomTextFieldState extends State<CustomTextField>
     super.initState();
   }
 
+  bool show = true;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -34,6 +37,7 @@ class _CustomTextFieldState extends State<CustomTextField>
             textDirection: TextDirection.rtl,
             child: TextFormField(
               autofocus: false,
+              obscureText: show,
               // textAlign: TextAlign.right,
               autocorrect: true,
               style: TextStyle(
@@ -49,18 +53,19 @@ class _CustomTextFieldState extends State<CustomTextField>
                   fontWeight: FontWeight.w600,
                 ),
                 filled: true,
-                fillColor: Colors.white,
+                fillColor: Color(0x00000000),
                 hintText: widget.titel,
-
-                // suffixIcon: widget.icon == null
-                //     ? null
-                //     : Padding(
-                //         padding: const EdgeInsets.only(top: 12),
-                //         child: Icon(
-                //           widget.icon,
-                //           size: 22,
-                //         ),
-                //       ),
+                suffixIcon: widget.icon == null
+                    ? null
+                    : IconButton(
+                        icon: show
+                            ? Icon(Icons.visibility_off)
+                            : Icon(Icons.visibility),
+                        onPressed: () {
+                          setState(() {
+                            show = !show;
+                          });
+                        }),
                 contentPadding: const EdgeInsets.only(
                     right: 14.0, left: 14.0, bottom: 5, top: 5),
                 focusedBorder: UnderlineInputBorder(

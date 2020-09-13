@@ -57,7 +57,7 @@ class ResetPassword extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => ActiveCode()));
                   },
                   color: Color(0xFF2e112d),
-                  Border: Color(0xFF2e112d),
+                  border: Color(0xFF2e112d),
                   color2: Colors.white,
                   titel: 'ارسال',
                 ),

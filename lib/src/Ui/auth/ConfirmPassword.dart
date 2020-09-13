@@ -4,7 +4,6 @@ import 'package:nazeef/src/Ui/mainWedget/CustemButton.dart';
 import 'package:nazeef/src/Ui/mainWedget/CustemScrun.dart';
 import 'package:nazeef/src/Ui/mainWedget/CustemTextField.dart';
 
-import 'ActiveCode.dart';
 
 class ConfirmPassword extends StatelessWidget {
   @override
@@ -59,7 +58,7 @@ class ConfirmPassword extends StatelessWidget {
                 CustomButton(
                   onTab: () {},
                   color: Color(0xFF2e112d),
-                  Border: Color(0xFF2e112d),
+                  border: Color(0xFF2e112d),
                   color2: Colors.white,
                   titel: 'تاكيد',
                 ),

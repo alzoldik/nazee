@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:nazeef/src/Ui/auth/singInForm.dart';
 import 'package:nazeef/src/Ui/mainWedget/CustemButton.dart';
-import 'package:nazeef/src/Ui/mainWedget/CustemEddImg.dart';
 import 'package:nazeef/src/Ui/mainWedget/CustemScrun.dart';
 import 'package:nazeef/src/Ui/mainWedget/CustemTextField.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
-import 'ResetPassword.dart';
 
 class SericeForm extends StatefulWidget {
   SericeForm() : super();
@@ -147,7 +145,7 @@ class _SericeFormState extends State<SericeForm> {
                             padding: EdgeInsets.all(20),
                             color: Colors.white,
                             child: Container(
-                              child: Icon(Icons.camera_enhance_sharp),
+                              child: Icon(Icons.camera),
                             ),
                             onPressed: () {
                               pickImageFromGallery(ImageSource.gallery);
@@ -180,7 +178,7 @@ class _SericeFormState extends State<SericeForm> {
                 CustomButton(
                   onTab: () {},
                   color: Color(0xFF2e112d),
-                  Border: Color(0xFF2e112d),
+                  border: Color(0xFF2e112d),
                   color2: Colors.white,
                   titel: 'انشاء',
                 ),
